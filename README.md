@@ -109,10 +109,12 @@ DS_termproject/
 │   ├── survey.csv                 # 원본 데이터
 │   └── cleaned_survey.csv         # 전처리 완료 데이터
 ├── notebooks/                     # Jupyter 노트북
-│   ├── 01_eda.ipynb               # EDA + 시각화
-│   ├── 02_preprocessing.ipynb     # 데이터 전처리
-│   ├── 03_classification.ipynb    # 분류 모델링
-│   └── 04_clustering.ipynb        # K-Means 클러스터링
+│   ├── 01_eda_강민지.ipynb
+|   ├── 02_preprocessing_임우진.ipynb
+|   ├── 03_training_김서준.ipynb
+|   ├── 04_clustering_장혁진.ipynb
+|   ├──clustering_분석_장혁진.md
+|   └──eda_해석.md
 ├── src/                           # 통합 함수 모듈
 │   └── auto_ml_pipeline.py        # Open Source SW Contribution
 ├── outputs/                       # 시각화 결과 (PNG)
@@ -156,18 +158,17 @@ jupyter lab
 ```python
 from src.auto_ml_pipeline import run_training_pipeline
 
-# 여러 모델을 한 번에 비교
-results = run_training_pipeline(
-    X, y,
+artifacts = run_training_pipeline(
+    csv_path="data/survey.csv",
+    target_col="treatment",
+    k_values=(3, 5, 10),
+    primary_metric="f1",
     test_size=0.2,
     random_state=42,
-    cv_folds=5,
-    scoring='f1'
 )
 
-# Top 5 best combinations 확인
-print(results.head(5))
-```
+# Top 5 best combinations
+print(artifacts["holdout_df"].head(5))
 
 ---
 
