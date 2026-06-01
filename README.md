@@ -197,13 +197,13 @@ print(artifacts["holdout_df"].head(5))
 
 ## 팀 구성 (Team 10)
 
-| 이름 | 역할 |
-|---|---|
-| 강민지 | EDA & 시각화 |
-| 임우진 | Data Preprocessing |
-| 김서준 | Classification Modeling |
-| 장혁진 | Clustering Analysis |
-| 이민서 | Open Source Function & 문서화 |
+| 학번 | 이름 | 역할 |
+|---|---|---|
+| 200000000 | 강민지 | EDA & 시각화 |
+| 202235109 | 임우진 | Data Preprocessing |
+| 202234869 | 김서준 | Classification Modeling |
+| 202235115 | 장혁진 | Clustering Analysis |
+| 202434647 | 이민서 | Open Source Function & 문서화 |
 
 ---
 
