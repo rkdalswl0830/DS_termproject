@@ -199,7 +199,7 @@ print(artifacts["holdout_df"].head(5))
 
 | 학번 | 이름 | 역할 |
 |---|---|---|
-| 200000000 | 강민지 | EDA & 시각화 |
+| 202431971 | 강민지 | EDA & 시각화 |
 | 202235109 | 임우진 | Data Preprocessing |
 | 202234869 | 김서준 | Classification Modeling |
 | 202235115 | 장혁진 | Clustering Analysis |
