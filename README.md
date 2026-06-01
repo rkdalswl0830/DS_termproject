@@ -169,7 +169,7 @@ artifacts = run_training_pipeline(
 
 # Top 5 best combinations
 print(artifacts["holdout_df"].head(5))
-
+```
 ---
 
 ## 사용 라이브러리
