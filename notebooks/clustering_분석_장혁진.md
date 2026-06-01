@@ -37,7 +37,9 @@ Mental Health in Tech Survey 데이터셋을 활용하여 업무환경에 따른
 | leave_-            | 정신 건강 관련 휴가 사용 용이성    |
 | supervisor_Yes     | 상사와 정신 건강 문제 논의 가능 여부 |
 | coworkers_Yes      | 동료와 정신 건강 문제 논의 가능 여부 |
-<br><br>
+
+<br>
+
 # 3. PCA
 ## 목적
 고차원 데이터를 2차원으로 축소하여
